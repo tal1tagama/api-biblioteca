@@ -1,0 +1,41 @@
+### Criar Autor
+POST http://localhost:4000/authors
+Content-Type: application/json
+
+{
+  "name": "Machado de Assis",
+  "birthDate": "1839-06-21",
+  "sex": "M",
+  "writingGenre": "Novel"
+}
+
+### Criar Usuário
+POST http://localhost:4000/users
+Content-Type: application/json
+
+{
+  "name": "João da Silva",
+  "birthDate": "1990-05-14",
+  "sex": "M",
+  "address": "Rua das Flores, 123"
+}
+
+### Criar Livro
+POST http://localhost:4000/books
+Content-Type: application/json
+
+{
+  "title": "Dom Casmurro",
+  "synopsis": "Um clássico da literatura brasileira.",
+  "year": 1899,
+  "author": "68fe1b209bacced429eb4ce2"
+}
+
+### Realizar Empréstimo
+POST http://localhost:4000/loans
+Content-Type: application/json
+
+{
+  "userId": "68fe1b319bacced429eb4ce5",
+  "bookId": "68fe1c6250b68ef617f4c9f1"
+}

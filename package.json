@@ -1,0 +1,19 @@
+{
+  "name": "biblioteca-api",
+  "version": "1.0.0",
+  "description": "API para Sistema de Gerenciamento de Biblioteca com Express e MongoDB",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "collections": "node src/scripts/collections.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
